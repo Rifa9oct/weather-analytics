@@ -24,10 +24,11 @@
         .roboto-font{
             font-family: 'Roboto', sans-serif;
         }
-        nav{
+        header{
             background-image: url('images/bg-top.png');
             background-size: cover;
             background-position: center;
+            height: 100vh;
         }
     </style>
 
@@ -35,7 +36,7 @@
 <body class="roboto-font bg-[#F8F9FF] m-0">
     <header>
     <!-- Navigation bar -->
-        <nav class="flex justify-between pt-16  px-5 lg:px-[210px]">
+        <nav class="flex justify-between pt-5 lg:pt-16  px-5 lg:px-[210px]">
             <!-- Manubar -->
             <div class="flex gap-20">
                 <div>
@@ -73,8 +74,24 @@
                 </div> 
             </div>                                
         </nav>
-    
-
+    <!-- Bannar section -->
+    <div class="bannar">
+        <div class="flex justify-between items-center mt-7 lg:mt-20 flex-col-reverse lg:flex-row">
+            <div class=" pl-5 lg:pl-[210px]">
+                <h1 class="text-2xl lg:text-5xl font-bold text-white">Monitor your business<br>on real-time dashboard</h1>
+                <p class="py-5 text-lg text-[#8794BA]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum<br>nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae<br>nibh nunc mattis imperdiet sed nullam.</p>
+                <div class="flex justify-center lg:justify-start">
+                    <button class="outline-none rounded-[68px] px-[80px]
+                    py-[10px]  text-base font-normal text-white bg-[#EF2A82] lg:mt-12">Try for free</button>
+                </div>
+            </div>
+            <div>
+                <img class=" lg:hidden" src="images/hidden-img.png" alt="">
+                <img class="w-[800px] h-[554px] hidden lg:block relative" src="images/chart-1.png" alt="">
+                <img class="w-[361px] h-[246px] hidden lg:block absolute bottom-[380px]  right-[512px]"  src="images/mini-chart.png" alt="">
+            </div>
+        </div>
+    </div>
     </header>
     <main>
 
