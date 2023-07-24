@@ -6,7 +6,7 @@
     <title>Weather Analytics</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="icons/logo-1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
 
     <!-- Tailwind and Daisy UI --> 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
@@ -24,8 +24,42 @@
     </style>
 
 </head>
-<body class="roboto-font">
+<body class="roboto-font bg-[#F8F9FF]">
     <header>
+    <!-- Navigation bar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                 <img class="w-[100%] lg:w-[184px] h-[100%] lg:h-10" src="icons/logo-1.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Products</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Blog</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <a>Sign in</a>
+                    <button class="btn btn-outline rounded-[68px] px-[53px] py[10px]  hidden lg:flex">Sign Up</button>
+                </div>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <img src="icons/menu-icon.svg" alt="">
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
+                        <li><a>Products</a></li>
+                        <li><a>Pricing</a></li>
+                        <li><a>FAQ</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Blog</a></li>
+                        <button>Sign Up</button>
+                    </ul>
+                </div>                    
+              </div>    
+        </nav>
 
     </header>
     <main>
