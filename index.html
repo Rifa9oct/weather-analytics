@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Font awesome Link -->
+    <script src="https://kit.fontawesome.com/61288e1cb7.js" crossorigin="anonymous"></script>
+
 
     <!-- Tailwind custome classes -->
 
@@ -29,6 +32,11 @@
             background-size: cover;
             background-position: center;
             height: 100vh;
+        }
+        footer{
+            background-image: url('images/bg-bottom.png');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 
@@ -132,7 +140,7 @@
     </section>
     <!-- Automated Reports & Widget Alerts section  -->
         <section class="mt-12 lg:mt-28">
-            <div class="flex justify-between items-center flex-col lg:flex-row lg:px-[210px] mt-36 lg:mt-16">
+            <div class="flex justify-between items-center flex-col lg:flex-row lg:px-[210px]  lg:mt-16">
                 <div class="p-5 lg:p-0">
                   <h1 class="text-2xl lg:text-5xl font-bold text-[#172755]">Automated Reports<br>& Widget Alerts</h1>
                   <p class="py-6 text-sm lg:text-lg text-[#8794BA] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Elementum nisi aliquet volutpat pellentesque volutpat est.<br>Sapien in etiam vitae nibh nunc mattis imperdiet sed<br>nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
@@ -161,9 +169,76 @@
         </div>
     </section>
     </main>
-    <footer>
-        
+    <footer class="pt-0 lg:pt-28">
+        <h1 class="text-start lg:text-center text-white pt-[255px] text-2xl lg:text-5xl font-bold text-[#172755] p-5 lg:p-0">Pricing Plans</h1>
+        <p class="text-start lg:text-center py-6 text-lg text-[#8794BA] mb-20 p-5 lg:p-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet<br>volutpat pellentesque volutpat est. </p>
+    <!-- Card style -->
+    <div class="hidden lg:flex justify-between items-center lg:pb-[100px] lg:px-[210px]">
+        <!-- Card-1 -->
+        <div class="w-[340px]  h-[440px] flex justify-center items-center rounded-[30px] bg-[#0F1F4B] shadow-xl">
+            <div class=" text-center">
+                <h2 class="text-3xl mb-3 text-white font-bold">Starter</h2>
+                <p class="text-lg text-[#8794BA] mb-9 ">up to 3 users</p>
+                <hr class="mb-7 ">
+                <h2 class="text-6xl text-white font-bold">$29</h2>
+                <p class="text-lg text-[#8794BA] mb-10 ">per month</p>
+                <button class="outline-none outline-[#465B95] rounded-[68px] px-[53px] py-[10px] text-white">Order</button>
+            </div>
+        </div>    
+        <!-- Card-2 -->
+        <div class="w-[340px]  h-[440px] flex justify-center items-center rounded-[30px] bg-white shadow-xl">
+            <div class=" text-center">
+                <h2 class="text-3xl mb-3 text-[#172755] font-bold">Standard</h2>
+                <p class="text-lg text-[#8794BA] mb-9 ">up to 20 users</p>
+                <hr class="mb-7 ">
+                <h2 class="text-6xl text-[#172755] font-bold">$99</h2>
+                <p class="text-lg text-[#8794BA] mb-10 ">per month</p>
+                <button class="outline-none bg-[#EF2A82] text-white rounded-[68px] px-[53px] py-[10px]">Order</button>
+            </div>
+        </div>  
+        <!-- Card-3 -->
+        <div class="w-[340px]  h-[440px] flex justify-center items-center rounded-[30px] bg-[#0F1F4B] shadow-xl">
+            <div class=" text-center">
+                <h2 class="text-3xl mb-3 text-white font-bold">Premium</h2>
+                <p class="text-lg text-[#8794BA] mb-9 ">up to 200 users</p>
+                <hr class="mb-7 ">
+                <h2 class="text-6xl text-white font-bold">$299</h2>
+                <p class="text-lg text-[#8794BA] mb-10 ">per month</p>
+                <button class="outline-none outline-[#465B95] text-white rounded-[68px] px-[53px] py-[10px]">Order</button>
+            </div>
+        </div> 
+    </div> 
+    <!-- Carosol part -->
+    <div class="carousel rounded-box flex lg:hidden">
+        <div class="carousel-item">
+          <img class="w-[340px]  h-[440px]" src="images/carosol-img-1.png" alt="Burger" />
+        </div> 
+        <div class="carousel-item">
+          <img class="w-[340px]  h-[440px]" src="images/carosol-img-2.png" alt="Burger" />
+        </div> 
+        <div class="carousel-item">
+          <img class="w-[340px]  h-[440px]" src="images/carosol-img-3.png" alt="Burger" />
+        </div> 
+      </div>
+    <!-- footer text -->
+    <hr class="mb-[64px] mx-[210px]">  
+    <div class="flex justify-between items-center pb-[100px] lg:px-[210px]">
+        <img class="w-[138px] h-[30px] pl-5 lg:pl-0" src="icons/logo-2.png" alt="">
+        <ul class="hidden lg:flex items-center gap-9">
+            <li>Product</li>
+            <li>Pricing Plans</li>
+            <li>FAQ</li>
+            <li>Blog</li>
+        </ul>
+        <div class="flex items-center gap-9 text-xl pr-5 lg:pr-0">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+            
+    </div>
     </footer>
+   
     
 </body>
 </html>
